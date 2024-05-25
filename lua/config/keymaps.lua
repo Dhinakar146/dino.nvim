@@ -10,3 +10,5 @@ map("n", "N", "Nzzzv", { desc = "Center the window when going to previous find r
 map("n", "<leader>x", ":bd<cr>", { desc = "Close current buffer" })
 map("n", "<leader>y", [["+y]], { desc = "Copy to clipboard" })
 map("v", "<leader>y", [["+y]], { desc = "Copy to clipboard" })
+map("n", "<leader>p", [["+p]], { desc = "Paste from clipboard" })
+map("v", "<leader>p", [["+p]], { desc = "Paste from clipboard" })
