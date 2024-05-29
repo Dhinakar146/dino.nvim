@@ -16,7 +16,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true -- convert tabs to spaces
 vim.opt.autoindent = true -- auto indentation
-vim.opt.list = true -- show tab characters and trailing whitespace
+vim.opt.list = false -- show tab characters and trailing whitespace
 
 vim.opt.ignorecase = true -- ignore case when searching
 vim.opt.smartcase = true -- unless capital letter in search
