@@ -15,7 +15,11 @@ return {
   opts = {
     options = {
       -- stylua: ignore
-      separator_style="slope",
+      separator_style="slant",
+      numbers = "ordinal",
+      indicator = {
+        style = "underline",
+      },
       close_command = function(n)
         LazyVim.ui.bufremove(n)
       end,
