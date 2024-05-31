@@ -15,7 +15,7 @@ return {
   opts = {
     options = {
       -- stylua: ignore
-      separator_style="slant",
+      separator_style="slope",
       close_command = function(n)
         LazyVim.ui.bufremove(n)
       end,

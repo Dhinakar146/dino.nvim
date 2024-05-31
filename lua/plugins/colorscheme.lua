@@ -4,9 +4,9 @@ return {
   lazy = false, -- We want the colorscheme to load immediately when starting Neovim
   priority = 1000, -- Load the colorscheme before other non-lazy-loaded plugins
   opts = {
-    style = "dark",
+    style = "deep",
     term_colors = true,
-    transparent = true,
+    transparent = false,
     code_style = {
       comments = "italic",
     },
@@ -16,3 +16,11 @@ return {
     vim.cmd("colorscheme onedark") -- Replace this with your favorite colorscheme
   end,
 }
+-- return {
+--   "cpea2506/one_monokai.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   opts = {
+--     transparent = false,
+--   },
+-- }
