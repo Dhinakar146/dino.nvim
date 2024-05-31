@@ -4,8 +4,9 @@ return {
   lazy = false, -- We want the colorscheme to load immediately when starting Neovim
   priority = 1000, -- Load the colorscheme before other non-lazy-loaded plugins
   opts = {
-    style = "deep",
+    style = "dark",
     term_colors = true,
+    transparent = true,
     code_style = {
       comments = "italic",
     },
