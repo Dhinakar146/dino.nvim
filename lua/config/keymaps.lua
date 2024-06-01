@@ -16,12 +16,12 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 -- disable search highlight
 keymap.set("n", "<C-n>", ":nohl<cr>")
 
--- close current buffer
-keymap.set("n", "<leader>x", ":bd<cr>")
-
 -- move to bottom of line after paste
 keymap.set("n", "p", "gp")
 keymap.set("n", "p", "gp")
+
+-- isort
+keymap.set("n", "<C-i>", ":!isort . <cr>", { desc = "This keybind applies isort to current directory" })
 
 -- Harpoon
 keymap.set("n", "<leader>H", require("harpoon.mark").add_file, { desc = "Add file to harpoon" })

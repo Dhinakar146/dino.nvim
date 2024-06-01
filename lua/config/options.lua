@@ -14,6 +14,7 @@ opt.cursorline = true
 opt.termguicolors = true
 opt.background = "dark"
 
+opt.list = false
 opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4
