@@ -7,7 +7,21 @@ return {
   dependencies = {
     -- LSP Management
     -- https://github.com/williamboman/mason.nvim
-    { "williamboman/mason.nvim" },
+    {
+      "williamboman/mason.nvim",
+      opts = function(_, opts)
+        vim.list_extend(opts.ensure_installed, {
+          "lua-language-server",
+          "black",
+          "pyright",
+          "bash-language-server",
+          "luacheck",
+          "html-lsp",
+          "css-lsp",
+          "stylelint-lsp",
+        })
+      end,
+    },
     -- https://github.com/williamboman/mason-lspconfig.nvim
     { "williamboman/mason-lspconfig.nvim" },
 

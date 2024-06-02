@@ -1,7 +1,7 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
---- Add any additional keymaps here
--- Set leader key to space
+
+-- leader key
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
@@ -20,8 +20,12 @@ keymap.set("n", "<C-n>", ":nohl<cr>")
 keymap.set("n", "p", "gp")
 keymap.set("n", "p", "gp")
 
--- isort
-keymap.set("n", "<C-i>", ":!isort . <cr>", { desc = "This keybind applies isort to current directory" })
+-- Surround visual selection
+-- vim.keymap.set("v", "(", "c()<esc>P<right>%", { desc = "surround selection" })
+-- vim.keymap.set("v", "[", "c[]<esc>P<right>%", { desc = "surround selection" })
+-- vim.keymap.set("v", "{", "c{}<esc>P<right>%", { desc = "surround selection" })
+-- vim.keymap.set("v", "'", "c''<esc>P<right>%", { desc = "surround selection" })
+-- vim.keymap.set("v", '"', 'c""<esc>P<right>%', { desc = "surround selection" })
 
 -- Harpoon
 keymap.set("n", "<leader>H", require("harpoon.mark").add_file, { desc = "Add file to harpoon" })
