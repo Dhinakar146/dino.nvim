@@ -17,6 +17,9 @@ keymap.set("n", "<C-n>", ":nohl<cr>")
 keymap.set("n", "p", "gp")
 keymap.set("n", "p", "gp")
 
+-- Codi
+keymap.set("n", "<leader>co", "<cmd>CodiSelect<CR>", { desc = "Open Codi quick menu" })
+
 -- Harpoon
 keymap.set("n", "<leader>H", require("harpoon.mark").add_file, { desc = "Add file to harpoon" })
 keymap.set("n", "<leader>h", require("harpoon.ui").toggle_quick_menu, { desc = "open harpoon quick menu" })
