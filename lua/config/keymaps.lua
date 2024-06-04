@@ -1,6 +1,3 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
-
 -- leader key
 vim.g.mapleader = " "
 
@@ -19,13 +16,6 @@ keymap.set("n", "<C-n>", ":nohl<cr>")
 -- move to bottom of line after paste
 keymap.set("n", "p", "gp")
 keymap.set("n", "p", "gp")
-
--- Surround visual selection
--- vim.keymap.set("v", "(", "c()<esc>P<right>%", { desc = "surround selection" })
--- vim.keymap.set("v", "[", "c[]<esc>P<right>%", { desc = "surround selection" })
--- vim.keymap.set("v", "{", "c{}<esc>P<right>%", { desc = "surround selection" })
--- vim.keymap.set("v", "'", "c''<esc>P<right>%", { desc = "surround selection" })
--- vim.keymap.set("v", '"', 'c""<esc>P<right>%', { desc = "surround selection" })
 
 -- Harpoon
 keymap.set("n", "<leader>H", require("harpoon.mark").add_file, { desc = "Add file to harpoon" })

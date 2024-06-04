@@ -14,5 +14,8 @@ def is_unique(s):
         return 1
 
 
+st.write("hello world")
+
+
 if __name__ == "__main__":
     print(is_unique(input()))
