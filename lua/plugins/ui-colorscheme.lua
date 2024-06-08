@@ -1,31 +1,31 @@
 -- one dark
--- return {
---   "navarasu/onedark.nvim",
---   lazy = false,
---   priority = 1000,
---   opts = {
---     style = "deep",
---     term_colors = true,
---     transparent = false,
---     code_style = {
---       comments = "italic",
---     },
---   },
---   config = function(_, opts)
---     require("onedark").setup(opts)
---     vim.cmd("colorscheme onedark")
---   end,
--- }
-
--- nordic
 return {
-  "AlexvZyl/nordic.nvim",
+  "navarasu/onedark.nvim",
   lazy = false,
   priority = 1000,
-  config = function()
-    require("nordic").load()
+  opts = {
+    style = "deep",
+    term_colors = true,
+    transparent = false,
+    code_style = {
+      comments = "italic",
+    },
+  },
+  config = function(_, opts)
+    require("onedark").setup(opts)
+    vim.cmd("colorscheme onedark")
   end,
 }
+
+-- nordic
+-- return {
+--   "AlexvZyl/nordic.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     require("nordic").load()
+--   end,
+-- }
 
 -- gruvbox
 -- return {
@@ -70,4 +70,36 @@ return {
 --   opts = {
 --     transparent = false,
 --   },
+-- }
+
+-- kanagawa
+-- return {
+--   "rebelot/kanagawa.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   opts = {
+--     compile = false, -- enable compiling the colorscheme
+--     undercurl = true, -- enable undercurls
+--     commentStyle = { italic = true },
+--     functionStyle = {},
+--     keywordStyle = { italic = true },
+--     statementStyle = { bold = true },
+--     typeStyle = {},
+--     transparent = false, -- do not set background color
+--     dimInactive = false, -- dim inactive window `:h hl-NormalNC`
+--     terminalColors = true, -- define vim.g.terminal_color_{0,17}
+--     colors = { -- add/modify theme and palette colors
+--       palette = {},
+--       theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
+--     },
+--     theme = "wave", -- Load "wave" theme when 'background' option is not set
+--     background = { -- map the value of 'background' option to a theme
+--       dark = "wave", -- try "dragon" !
+--       light = "lotus",
+--     },
+--   },
+--   config = function(_, opts)
+--     require("kanagawa").setup(opts)
+--     vim.cmd("colorscheme kanagawa")
+--   end,
 -- }
