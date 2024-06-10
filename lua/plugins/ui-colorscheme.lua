@@ -1,21 +1,21 @@
 -- one dark
-return {
-  "navarasu/onedark.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {
-    style = "deep",
-    term_colors = true,
-    transparent = false,
-    code_style = {
-      comments = "italic",
-    },
-  },
-  config = function(_, opts)
-    require("onedark").setup(opts)
-    vim.cmd("colorscheme onedark")
-  end,
-}
+-- return {
+--   "navarasu/onedark.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   opts = {
+--     style = "deep",
+--     term_colors = true,
+--     transparent = false,
+--     code_style = {
+--       comments = "italic",
+--     },
+--   },
+--   config = function(_, opts)
+--     require("onedark").setup(opts)
+--     vim.cmd("colorscheme onedark")
+--   end,
+-- }
 
 -- nordic
 -- return {
@@ -71,6 +71,32 @@ return {
 --     transparent = false,
 --   },
 -- }
+
+-- vscode theme
+return {
+  "Mofiqul/vscode.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {
+    -- style = 'light'
+    -- Enable transparent background
+    transparent = true,
+    -- Enable italic comment
+    italic_comments = true,
+    -- Underline `@markup.link.*` variants
+    underline_links = true,
+    -- Disable nvim-tree background color
+    disable_nvimtree_bg = true,
+    -- Override colors (see ./lua/vscode/colors.lua)
+    color_overrides = {
+      vscLineNumber = "#FFFFFF",
+    },
+  },
+  config = function(_, opts)
+    require("vscode").setup(opts)
+    vim.cmd("colorscheme vscode")
+  end,
+}
 
 -- kanagawa
 -- return {
